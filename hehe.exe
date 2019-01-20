@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Media;
+using System.Threading.Tasks;
+
+namespace hehe
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Info
+            string appName = "hehe";
+            string appVersion = "1.0.0";
+            string appAuthor = "vicelean";
+            Random rand = new Random();
+            int A = rand.Next(0, 255);
+            int R = rand.Next(0, 255);
+            int G = rand.Next(0, 255);
+            int B = rand.Next(0, 255);
+            //Music
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\cspr1\source\repos\hehe\pewdiepie.wav");
+            simpleSound.Play();
+
+
+            //Change Color
+            Console.ForegroundColor = (ConsoleColor)rand.Next(0, 16);
+            //Ascii
+            Console.WriteLine(" ▄  █ ▄███▄    ▄  █ ▄███▄   ");
+            Console.WriteLine("█   █ █▀   ▀  █   █ █▀   ▀  ");
+            Console.WriteLine("██▀▀█ ██▄▄    ██▀▀█ ██▄▄   ");
+            Console.WriteLine(" █   █ █▄   ▄▀ █   █ █▄   ▄▀ ");
+            Console.WriteLine("    █  ▀███▀      █  ▀███▀   ");
+            Console.WriteLine("   ▀             ▀           ");
+            //Info Text
+            Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine("Are you subscribed to pewdipie? [Y or N]");
+            Console.ResetColor();
+            string answer = Console.ReadLine().ToUpper();
+            if (answer == "N") System.Diagnostics.Process.Start("https://www.youtube.com/user/Pewdiepie?sub_confirmation=1");
+            Console.ForegroundColor = ConsoleColor.Red;
+            if (answer == "N") Console.WriteLine("What is wrong with you?");
+            Console.ForegroundColor = ConsoleColor.Green;
+            if (answer == "Y") Console.WriteLine("       ______");
+            if (answer == "Y") Console.WriteLine("  .---<__. \\ \\ ");
+            if (answer == "Y") Console.WriteLine("  `---._  \\ \\ \\ ");
+            if (answer == "Y") Console.WriteLine("   ,----`- `.)) ");
+            if (answer == "Y") Console.WriteLine("  / ,--.   )  |");
+            if (answer == "Y") Console.WriteLine(" /_/    >     |");
+            if (answer == "Y") Console.WriteLine(" |,\\__-'     ");
+            if (answer == "Y") Console.WriteLine("  \\_           \\ ");
+            if (answer == "Y") Console.WriteLine("    ~~-___      )");
+            if (answer == "Y") Console.WriteLine("          \\      \\ ");
+            if (answer == "Y") Console.WriteLine("     ｖｅｒｙ ｎｉｃｅ ");
+
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
