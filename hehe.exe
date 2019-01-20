@@ -21,7 +21,7 @@ namespace hehe
             int G = rand.Next(0, 255);
             int B = rand.Next(0, 255);
             //Music
-            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\cspr1\source\repos\hehe\pewdiepie.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\hehe\pewdiepie.wav");
             simpleSound.Play();
 
 
